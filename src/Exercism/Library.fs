@@ -1,4 +1,4 @@
-﻿namespace FSharp.ProjectTemplate
+namespace Exercism
 
 /// Documentation for my library
 ///
