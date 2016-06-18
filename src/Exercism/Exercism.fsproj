@@ -67,6 +67,7 @@
     <Compile Include="HelloWorld.fs" />
     <Compile Include="SumOfMultiples.fs" />
     <Compile Include="DifferenceOfSquares.fs" />
+    <Compile Indlude="Bob.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
