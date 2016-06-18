@@ -64,6 +64,9 @@
     <None Include="paket.references" />
     <None Include="paket.template" />
     <Content Include="App.config" />
+    <Compile Include="HelloWorld.fs" />
+    <Compile Include="SumOfMultiples.fs" />
+    <Compile Include="DifferenceOfSquares.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
