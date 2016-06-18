@@ -52,14 +52,14 @@ let testAssemblies = "tests/**/bin/Release/*Tests*.dll"
 
 // Git configuration (used for publishing documentation in gh-pages branch)
 // The profile where the project is posted
-let gitOwner = "Update GitHome in build.fsx"
+let gitOwner = "heynickc"
 let gitHome = "https://github.com/" + gitOwner
 
 // The name of the project on GitHub
-let gitName = "Exercism"
+let gitName = "fsharp_exercism_exercises"
 
 // The url for the raw files hosted
-let gitRaw = environVarOrDefault "gitRaw" "https://raw.github.com/Update GitHome in build.fsx"
+let gitRaw = environVarOrDefault "gitRaw" "https://raw.github.com/heynickc/fsharp_exercism_exercises"
 
 // --------------------------------------------------------------------------------------
 // END TODO: The rest of the file includes standard build steps
