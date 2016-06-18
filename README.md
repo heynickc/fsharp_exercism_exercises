@@ -1,1 +1,1 @@
-### Exercism.io exercises for learning F#
+### My Exercism.io scratchpad for learning FSharp
