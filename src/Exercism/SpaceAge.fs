@@ -12,17 +12,20 @@ module SpaceAge =
         | Uranus
         | Neptune
 
-    let spaceAge planet seconds = 
+    let secondsToEarthSeconds seconds conversion = 
         let earthSeconds = 31557600m
         let round (n:decimal) = System.Math.Round(n, 2)
+        round (seconds/(earthSeconds*conversion))
+
+    let spaceAge planet seconds = 
         match planet with
-        | Earth -> round (seconds/earthSeconds)
-        | Mercury -> round (seconds/(earthSeconds*0.2408467m))
-        | Venus -> round (seconds/(earthSeconds*0.61519726m))
-        | Mars -> round (seconds/(earthSeconds*1.8808158m))
-        | Jupiter -> round (seconds/(earthSeconds*11.862615m))
-        | Saturn -> round (seconds/(earthSeconds*29.447498m))
-        | Uranus -> round (seconds/(earthSeconds*84.016846m))
-        | Neptune -> round (seconds/(earthSeconds*164.79132m))
+        | Earth -> secondsToEarthSeconds seconds 1m
+        | Mercury -> secondsToEarthSeconds seconds 0.2408467m
+        | Venus -> secondsToEarthSeconds seconds 0.61519726m
+        | Mars -> secondsToEarthSeconds seconds 1.8808158m
+        | Jupiter -> secondsToEarthSeconds seconds 11.862615m
+        | Saturn -> secondsToEarthSeconds seconds 29.447498m
+        | Uranus -> secondsToEarthSeconds seconds 84.016846m
+        | Neptune -> secondsToEarthSeconds seconds 164.79132m
         | _ -> 0m
 

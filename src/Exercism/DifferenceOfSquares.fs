@@ -11,7 +11,7 @@ module DifferenceOfSquares =
 
     let sumOfSquares n = 
         [1 .. n]
-        |> Seq.sumBy(square)
+        |> Seq.sumBy square
 
     let difference n =
         squareOfSums n - sumOfSquares n

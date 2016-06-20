@@ -70,6 +70,7 @@
     <Compile Include="DifferenceOfSquaresTests.fs" />
     <Compile Include="BobTests.fs" />
     <Compile Include="SpaceAgeTest.fs" />
+    <Compile Include="GigasecondTest.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />

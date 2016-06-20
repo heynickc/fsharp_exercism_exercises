@@ -68,6 +68,7 @@
     <Compile Include="DifferenceOfSquares.fs" />
     <Compile Include="Bob.fs" />
     <Compile Include="SpaceAge.fs" />
+    <Compile Include="Gigasecond.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
