@@ -8,7 +8,7 @@ module Bob =
         if Regex(re).IsMatch(inp) 
         then Some() else None
 
-    let (|IsAllCaps|_|) s = 
+    let (|IsAllCaps|_|) (s:string) = 
         if String.exists System.Char.IsLetter s 
             && not (String.exists System.Char.IsLower s) 
         then Some() else None
