@@ -70,6 +70,7 @@
     <Compile Include="SpaceAge.fs" />
     <Compile Include="Gigasecond.fs" />
     <Compile Include="Triangle.fs" />
+    <Compile Include="BeerSong.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
