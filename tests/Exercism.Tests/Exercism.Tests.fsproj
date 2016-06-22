@@ -71,6 +71,7 @@
     <Compile Include="BobTests.fs" />
     <Compile Include="SpaceAgeTest.fs" />
     <Compile Include="GigasecondTest.fs" />
+    <Compile Include="TriangleTest.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
