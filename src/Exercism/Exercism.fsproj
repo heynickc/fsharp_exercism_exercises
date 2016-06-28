@@ -73,6 +73,7 @@
     <Compile Include="BeerSong.fs" />
     <Compile Include="RobotName.fs" />
     <Compile Include="BankAccount.fs" />
+    <Compile Include="Grains.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />

@@ -75,6 +75,7 @@
     <Compile Include="BeerSongTest.fs" />
     <Compile Include="RobotNameTest.fs" />
     <Compile Include="BankAccountTest.fs" />
+    <Compile Include="GrainsTest.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
