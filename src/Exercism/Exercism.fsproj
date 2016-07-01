@@ -76,6 +76,7 @@
     <Compile Include="Grains.fs" />
     <Compile Include="LeapYear.fs" />
     <Compile Include="Binary.fs" />
+    <Compile Include="Hamming.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
