@@ -1,16 +1,16 @@
 ﻿namespace Exercism
 
-module Binary = 
-
+module Trinary = 
+    
     let (|IsAllNumbers|_|)  s =
         if String.forall System.Char.IsNumber s
         then Some() else None
 
-    let (|IsAllBinaryDigits|_|) ia =
+    let (|IsAllTrinaryDigits|_|) ia =
         let allBinary = 
             ia
             |> Array.choose id
-            |> Array.forall (fun j -> j < 2)
+            |> Array.forall (fun j -> j < 3)
         if allBinary then Some() else None
 
     let parseCharToInt c = 
@@ -29,23 +29,23 @@ module Binary =
     
     let isIntArrayAllBinary ia =
         match ia with
-        | IsAllBinaryDigits -> ia
+        | IsAllTrinaryDigits -> ia
         | _ -> [| Some(0) |]
 
-    let intToBaseTwo i pos = 
+    let intToBaseThree i power =
         match i with
-        | Some j -> j * (pown 2 pos)
+        | Some j -> j * (pown 3 power)
         | None -> 0
-    
-    let intArrayToBaseTwo intArray = 
+
+    let intArrayToBaseThree intArray =
         let intArrayLen = intArray |> Array.length
         let exponents = [| (intArrayLen - 1) .. -1 .. 0 |]
         intArray 
-        |> Array.mapi (fun index i -> intToBaseTwo i exponents.[index]) 
+        |> Array.mapi (fun index i -> intToBaseThree i exponents.[index]) 
         |> Array.reduce (+)
     
-    let toDecimal s = 
-        s
+    let toDecimal s =
+        s 
         |> stringToIntArray
-        |> isIntArrayAllBinary 
-        |> intArrayToBaseTwo
+        |> isIntArrayAllBinary
+        |> intArrayToBaseThree
