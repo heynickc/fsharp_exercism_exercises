@@ -78,6 +78,7 @@
     <Compile Include="Binary.fs" />
     <Compile Include="Hamming.fs" />
     <Compile Include="Trinary.fs" />
+    <Compile Include="ETL.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
