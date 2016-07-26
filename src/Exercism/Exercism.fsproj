@@ -79,6 +79,8 @@
     <Compile Include="Hamming.fs" />
     <Compile Include="Trinary.fs" />
     <Compile Include="ETL.fs" />
+    <Compile Include="Octal.fs" />
+    <Compile Include="ZipFilterUnzipFormat.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />

@@ -5,6 +5,6 @@ module ETL =
         seq { 
             for i in l do
                 for j in i.Value do
-                    yield (j.ToLower System.Globalization.CultureInfo.CurrentCulture, i.Key)
+                    yield (j.ToLower(), i.Key)
         }
         |> Map.ofSeq

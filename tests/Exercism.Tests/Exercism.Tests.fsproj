@@ -81,6 +81,7 @@
     <Compile Include="HammingTests.fs" />
     <Compile Include="TrinaryTests.fs" />
     <Compile Include="ETLTests.fs" />
+    <Compile Include="OctalTests.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
