@@ -81,6 +81,7 @@
     <Compile Include="ETL.fs" />
     <Compile Include="Octal.fs" />
     <Compile Include="ZipFilterUnzipFormat.fs" />
+    <Compile Include="PigLatin.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
